@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.391s</div>
+<div class="counter">0.594s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,12 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.391s</td>
+<td class="success">0.425s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">sumWorking()</td>
+<td class="success">0.169s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,22 +92,22 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>14:58:12.154 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:58:12.186 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:58:12.239 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-14:58:12.265 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests], using SpringBootContextLoader
-14:58:12.272 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: class path resource [com/greenfox/CircleCIHeroku/CircleCiHerokuApplicationTests-context.xml] does not exist
-14:58:12.283 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: class path resource [com/greenfox/CircleCIHeroku/CircleCiHerokuApplicationTestsContext.groovy] does not exist
-14:58:12.285 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:58:12.286 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: CircleCiHerokuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:58:12.354 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]
-14:58:12.484 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/pavelnebesky/Documents/greenfox/CircleCI-Heroku/CircleCI-Heroku/build/classes/java/main/com/greenfox/CircleCIHeroku/CircleCiHerokuApplication.class]
-14:58:12.486 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.greenfox.CircleCIHeroku.CircleCiHerokuApplication for test class com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests
-14:58:12.652 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: using defaults.
-14:58:12.653 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-14:58:12.684 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@d8be89b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@69db5652, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6f6d79b9, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@398e37f2, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6b13cf68, org.springframework.test.context.transaction.TransactionalTestExecutionListener@58c96d9e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5c6d678f, org.springframework.test.context.event.EventPublishingTestExecutionListener@1414ea57, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61891f32, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@72bf2b00, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@45597bc7, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@762c6769, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5f759611]
-14:58:12.691 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@601fc135 testClass = CircleCiHerokuApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@7bcde1c7 testClass = CircleCiHerokuApplicationTests, locations = '{}', classes = '{class com.greenfox.CircleCIHeroku.CircleCiHerokuApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@37966466, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@22a870e6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@1f8409a8, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@7f0e117], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
-14:58:12.748 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+<pre>20:12:20.734 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+20:12:20.771 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+20:12:20.823 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+20:12:20.865 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests], using SpringBootContextLoader
+20:12:20.875 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: class path resource [com/greenfox/CircleCIHeroku/CircleCiHerokuApplicationTests-context.xml] does not exist
+20:12:20.879 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: class path resource [com/greenfox/CircleCIHeroku/CircleCiHerokuApplicationTestsContext.groovy] does not exist
+20:12:20.880 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+20:12:20.887 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: CircleCiHerokuApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:12:21.007 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]
+20:12:21.132 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/pavelnebesky/Documents/greenfox/CircleCI-Heroku/build/classes/java/main/com/greenfox/CircleCIHeroku/CircleCiHerokuApplication.class]
+20:12:21.134 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.greenfox.CircleCIHeroku.CircleCiHerokuApplication for test class com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests
+20:12:21.323 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.greenfox.CircleCIHeroku.CircleCiHerokuApplicationTests]: using defaults.
+20:12:21.326 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+20:12:21.365 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@48cf131b, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50559741, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7bc6da1e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@1c96e801, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2c716743, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50e21213, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1d39243b, org.springframework.test.context.event.EventPublishingTestExecutionListener@36c4017d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@11282399, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@511ad925, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@55637c1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@130f11ff, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@436bdcec]
+20:12:21.372 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@4b12f351 testClass = CircleCiHerokuApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@2b0c024d testClass = CircleCiHerokuApplicationTests, locations = '{}', classes = '{class com.greenfox.CircleCIHeroku.CircleCiHerokuApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4c9754ba, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1a78bc44, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@737e0d4c, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@3933ef89], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -&gt; true]], class annotated with @DirtiesContext [false] with mode [null].
+20:12:21.438 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -112,23 +117,23 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.2.2.RELEASE)
 
-2019-12-10 14:58:13.463  INFO 786 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : Starting CircleCiHerokuApplicationTests on Pavel-MacBook-Air.local with PID 786 (started by pavelnebesky in /Users/pavelnebesky/Documents/greenfox/CircleCI-Heroku/CircleCI-Heroku)
-2019-12-10 14:58:13.466  INFO 786 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : No active profile set, falling back to default profiles: default
-2019-12-10 14:58:14.728  INFO 786 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2019-12-10 14:58:14.771  INFO 786 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 JPA repository interfaces.
-2019-12-10 14:58:15.543  INFO 786 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2019-12-10 14:58:15.964  INFO 786 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-10 14:58:16.406  INFO 786 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-10 14:58:16.589  INFO 786 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2019-12-10 14:58:16.745  INFO 786 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
-2019-12-10 14:58:17.078  INFO 786 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2019-12-10 14:58:17.339  INFO 786 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2019-12-10 14:58:17.810  INFO 786 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2019-12-10 14:58:17.823  INFO 786 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2019-12-10 14:58:18.279  WARN 786 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2019-12-10 14:58:18.770  INFO 786 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-12-10 14:58:18.942  INFO 786 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-12-10 14:58:19.463  INFO 786 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : Started CircleCiHerokuApplicationTests in 6.695 seconds (JVM running for 8.769)
+2019-12-10 20:12:22.041  INFO 2087 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : Starting CircleCiHerokuApplicationTests on Pavel-Air with PID 2087 (started by pavelnebesky in /Users/pavelnebesky/Documents/greenfox/CircleCI-Heroku)
+2019-12-10 20:12:22.046  INFO 2087 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : No active profile set, falling back to default profiles: default
+2019-12-10 20:12:23.290  INFO 2087 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2019-12-10 20:12:23.324  INFO 2087 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 JPA repository interfaces.
+2019-12-10 20:12:23.916  INFO 2087 --- [    Test worker] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-12-10 20:12:24.217  INFO 2087 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-12-10 20:12:24.494  INFO 2087 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-12-10 20:12:24.603  INFO 2087 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2019-12-10 20:12:24.702  INFO 2087 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2019-12-10 20:12:24.943  INFO 2087 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2019-12-10 20:12:25.156  INFO 2087 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-12-10 20:12:25.582  INFO 2087 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2019-12-10 20:12:25.591  INFO 2087 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-12-10 20:12:25.967  WARN 2087 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-12-10 20:12:26.415  INFO 2087 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-10 20:12:26.544  INFO 2087 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-12-10 20:12:27.050  INFO 2087 --- [    Test worker] c.g.C.CircleCiHerokuApplicationTests     : Started CircleCiHerokuApplicationTests in 5.584 seconds (JVM running for 7.76)
 </pre>
 </span>
 </div>
@@ -140,7 +145,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.0.1</a> at 10. 12. 2019 14:58:19</p>
+<a href="http://www.gradle.org">Gradle 6.0.1</a> at 10. 12. 2019 20:12:27</p>
 </div>
 </div>
 </body>
