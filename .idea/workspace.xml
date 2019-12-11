@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c33f8a7-602f-418b-ae58-01cb62d7a0f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/greenfox/CircleCIHeroku/services/HomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greenfox/CircleCIHeroku/services/HomeService.java" afterDir="false" />
-    </list>
+    <list default="true" id="1c33f8a7-602f-418b-ae58-01cb62d7a0f2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -127,7 +125,7 @@
       <workItem from="1575985589917" duration="187000" />
       <workItem from="1575986015167" duration="1242000" />
       <workItem from="1575992045161" duration="462000" />
-      <workItem from="1575994598920" duration="1808000" />
+      <workItem from="1575994598920" duration="1959000" />
     </task>
     <servers />
   </component>
