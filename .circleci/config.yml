@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - master
+        - development
     environment:
       # Configure the JVM and Gradle to avoid OOM errors
       _JAVA_OPTIONS: "-Xmx3g"
@@ -29,6 +33,10 @@ jobs:
           paths:
             - build
   test:
+    branches:
+      only:
+        - master
+        - development
     # Remove if parallelism is not desired
     parallelism: 2
     environment:
