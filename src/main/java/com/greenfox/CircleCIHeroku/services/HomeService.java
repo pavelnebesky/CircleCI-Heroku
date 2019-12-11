@@ -7,7 +7,7 @@ public class HomeService {
 
     public int sumNumbers (int a, int b)
     {
-        return a + b;
+        return b + a;
     }
 
 }
