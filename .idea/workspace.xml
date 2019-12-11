@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1c33f8a7-602f-418b-ae58-01cb62d7a0f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/greenfox/CircleCIHeroku/services/HomeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/greenfox/CircleCIHeroku/services/HomeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +129,7 @@
       <workItem from="1575986015167" duration="1242000" />
       <workItem from="1575992045161" duration="462000" />
       <workItem from="1575994598920" duration="3154000" />
-      <workItem from="1576058736518" duration="75000" />
+      <workItem from="1576058736518" duration="268000" />
     </task>
     <servers />
   </component>
