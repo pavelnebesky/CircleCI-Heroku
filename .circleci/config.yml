@@ -75,7 +75,17 @@ workflows:
   version: 2
   workflow:
     jobs:
-    - build
+    - build:
+        filters:
+          branches:
+            only:
+              - master
+              - development
     - test:
         requires:
           - build
+        filters:
+          branches:
+            only:
+              - master
+              - development
